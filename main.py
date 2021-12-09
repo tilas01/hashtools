@@ -129,7 +129,7 @@ def main():
                 print(COLOR["RED"] + "File hashes do not match." + COLOR["ENDC"])
             print(f"First File ({hashtype}): {firsthash}")
             print(f"Second File ({hashtype}): {secondhash}")
-            a = input("Press enter to refresh...")
+            input("Press enter to refresh...")
             clear()
 
         elif choice == "2":
@@ -159,7 +159,7 @@ def main():
                 print(COLOR["RED"] + "Hashes do not match." + COLOR["ENDC"])
             print(f"File ({hashtype}): {filehash}")
             print(f"Hash ({hashtype}): {validatehash}")
-            a = input("Press enter to refresh...")
+            input("Press enter to refresh...")
             clear()
 
         elif choice == "3":
@@ -185,7 +185,7 @@ def main():
                 print(COLOR["RED"] + "Hashes do not match." + COLOR["ENDC"])
             print(f"String ({hashtype}): {stringhash}")
             print(f"Hash ({hashtype}): {validatestring}")
-            a = input("Press enter to refresh...")
+            input("Press enter to refresh...")
             clear()
 
         elif choice == "4":
@@ -211,7 +211,7 @@ def main():
                 print(f"\nFile hash (MD5): {md5filehash}")
                 print(f"File hash (SHA256): {sha256filehash}")
                 print(f"File hash (SHA1): {sha1filehash}")
-                a = input("Press enter to refresh...")
+                input("Press enter to refresh...")
                 clear()
 
             else:
@@ -231,7 +231,7 @@ def main():
                         break
 
                 print(f"\nFile hash ({hashtype}): {filehash}")
-                a = input("Press enter to refresh...")
+                input("Press enter to refresh...")
                 clear()
 
 
@@ -252,7 +252,7 @@ def main():
                 print(f"\nString hash (MD5): {md5stringhash}")
                 print(f"String hash (SHA256): {sha256stringhash}")
                 print(f"String hash (SHA1): {sha1stringhash}")
-                a = input("Press enter to refresh...")
+                input("Press enter to refresh...")
                 clear()
 
             else:
@@ -265,7 +265,7 @@ def main():
                     stringhash = hash(string, True, "sha1")
 
                 print(f"\nString hash ({hashtype}): {stringhash}")
-                a = input("Press enter to refresh...")
+                input("Press enter to refresh...")
                 clear()
 
         elif choice == "6":
